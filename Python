@@ -1,0 +1,12 @@
+import requests
+
+API_KEY = "AIzaSyBMDLDJo8tUF9qJ6NQLY8wGQQXRkEtgFHo"
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateText?key={API_KEY}"
+
+data = {
+    "prompt": {"text": "Test de connexion entre Spartacus et Gemini."},
+    "temperature": 0.7
+}
+
+response = requests.post(url, json=data)
+print(response.json())
