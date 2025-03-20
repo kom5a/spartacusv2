@@ -1,0 +1,37 @@
+{
+    "scripts": [
+        {
+            "name": "Mise à jour GitHub",
+            "file": "update_github.sh",
+            "dependencies": ["git"],
+            "priority": 1
+        },
+        {
+            "name": "Déploiement Google Cloud",
+            "file": "deploy_gcloud.sh",
+            "dependencies": ["gcloud"],
+            "priority": 2
+        },
+        {
+            "name": "Lancement Spartacus AI",
+            "file": "spartacus_ai.py",
+            "dependencies": ["python3"],
+            "priority": 3
+        }
+    ],
+    "projects": {
+        "kom5a": {
+            "path": "/home/$(whoami)/kom5a",
+            "git_repo": "https://github.com/Ahmed022025/kom5a.git"
+        },
+        "kom5a-backend": {
+            "path": "/home/$(whoami)/kom5a-backend",
+            "git_repo": "https://github.com/Ahmed022025/kom5a-backend.git"
+        },
+        "kom5a-frontend": {
+            "path": "/home/$(whoami)/kom5a-frontend",
+            "git_repo": "https://github.com/Ahmed022025/kom5a-frontend.git"
+        }
+    }
+}
+
