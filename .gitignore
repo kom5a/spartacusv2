@@ -1,0 +1,9 @@
+# 📦 Ignorer les modules et fichiers build trop lourds
+node_modules/
+*.node
+*.log
+*.cache
+
+node_modules/
+*.node
+.next/

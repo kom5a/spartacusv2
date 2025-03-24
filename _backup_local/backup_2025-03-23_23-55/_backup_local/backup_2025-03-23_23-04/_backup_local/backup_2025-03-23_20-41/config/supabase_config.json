@@ -1,0 +1,10 @@
+{
+  "SUPABASE_URL": "https://nkzizwmwgshrkjajcvvr.supabase.co",
+  "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5reml6d253Z3NocmtqYWljeXZyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjczMTM2NiwiZXhwIjoyMDU4MzA3MzY2fQ.QSGvlw-hkOb2AuHOGz3RI4qohepXU5DumKSeZOtiQis",
+  "SUPABASE_DB_HOST": "db.nkzizwmwgshrkjajcvvr.supabase.co",
+  "SUPABASE_DB_PORT": 5432,
+  "SUPABASE_DB_USER": "postgres",
+  "SUPABASE_DB_PASSWORD": "Amel1985.@2025",
+  "SUPABASE_DB_NAME": "postgres"
+}
+
