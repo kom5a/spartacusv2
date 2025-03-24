@@ -1,10 +1,10 @@
 import '../styles/globals.css';
+import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     console.log("🤖 Spartacus AI initialisé.");
-    // Activation visible
     const spartacus = document.createElement('div');
     spartacus.innerHTML = "🧠 Spartacus en ligne";
     spartacus.style.position = "fixed";
@@ -18,7 +18,16 @@ function MyApp({ Component, pageProps }) {
     document.body.appendChild(spartacus);
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <ClerkProvider {...pageProps}>
+      <SignedIn>
+        <Component {...pageProps} />
+      </SignedIn>
+      <SignedOut>
+        <RedirectToSignIn />
+      </SignedOut>
+    </ClerkProvider>
+  );
 }
 
 export default MyApp;
